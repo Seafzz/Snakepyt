@@ -142,9 +142,16 @@ def main(stdscr):
         if snake[0][0] in [0, sh] or \
             snake[0][1] in [0, sw] or \
             snake[0] in snake[1:]:
-            curses.endwin()
-            print(f'Congratulations, {player}! Your score is {score}')
             break
-            
+
+    # End curses window
+    curses.endwin()
+
+    # Print final score
+    print(f'Congratulations, {player}! Your score is {score}')
+
+    # Wait for user input to close the terminal
+    input("Press any key to exit...")
+
 #initialize the game and start the main game loop
 curses.wrapper(main)
