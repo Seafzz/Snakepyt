@@ -27,15 +27,17 @@ def player_name(stdscr):
             else:
                 stdscr.addstr(1,0, "Please enter 'yes' or 'no'")
                 stdscr.refresh()
+
 def print_instructions(stdscr):
     """
     Function to print the instructions of the game.
     """
-    stdscr.clear()
-    stdscr.addstr(0,0, "Instructions:")
-    stdscr.addstr(1,0, "1. The snake will grow in length as it eats the food.")
-    stdscr.addstr(2,0, "2. The game will end if the snake runs into the wall or itself.")
-    stdscr.addstr(3,0, "3. Use the arrow keys to move the snake.")
-    stdscr.addstr(4,0, "4. The snake will go faster if you hold down the key")
-    stdscr.refresh()
-    stdscr.getch()
+   stdscr.clear()
+   stdscr.addstr(0, 0, f"Welcome to Snake, {player}!")
+   stdscr.addstr(2, 0, "Use the arrow keys to control the snake. You can hold down the arrows to make the snake go faster.")
+   stdscr.addstr(3, 0, "Do not let the snake touch the sides of the game area or eat itself!")
+   stdscr.addstr(4, 0, "The snake will grow longer each time it eats food.")
+   stdscr.addstr(5, 0, "The game will end when the snake runs into the sides of the game area or eats itself.")
+   stdscr.addstr(7, 0, "If you are ready, press enter to start the game.")
+   stdscr.refresh()
+   stdscr.getch() #wait for user input
