@@ -56,6 +56,15 @@ It passed with minor problems some of the issues I had was:
 
      All errors was fixed.
 
+### Technologies Used
+- Python library curses
+- Gitpod and github
+- Heroku
+- Black and Flake8 
+
+### Deployment
+
+
 
 ## Credits
 
