@@ -35,7 +35,7 @@ def print_instructions(stdscr, player):
         2,
         0,
         "Use the arrow keys to control the snake" +
-        "You can hold down the arrows to make the snake go faster.",
+        "Hold down the key to make the snake go faster.",
     )
     stdscr.addstr(
         3, 0, "Do not let the snake touch the wall or eat itself!"
