@@ -61,3 +61,13 @@ def main(stdscr):
     w = curses.newwin(sh, sw, 0, 0)
     w.keypad(1) #Enable keypad input
     w.timeout(100) #Refresh the screen every 100ms
+
+    #Create the snake
+    snake_x = sw//4
+    snake_y = sh//2
+    snake = [
+        [snake_y, snake_x],
+        [snake_y, snake_x-1],
+        [snake_y, snake_x-2]
+    ]
+    
