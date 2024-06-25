@@ -41,3 +41,15 @@ def print_instructions(stdscr):
    stdscr.addstr(7, 0, "If you are ready, press enter to start the game.")
    stdscr.refresh()
    stdscr.getch() #wait for user input
+
+def main(stdscr):
+    # Initialize curses mode
+    curses.curs_set(0) #Make cursor invisble
+
+    # Get the height and width of the window
+    sh, sw = stdscr.getmaxyx()
+
+    #Get player information
+    player = player_name(stdscr)
+    if ask_played_before(stdscr) in {'no', 'n'}:
+        print_instructions(stdscr)
