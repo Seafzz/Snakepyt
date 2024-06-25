@@ -1,3 +1,7 @@
+"""
+A simple Python snake game
+"""
+
 import random
 import curses
 
