@@ -120,18 +120,27 @@ def main(stdscr):
 
         #Check if the snake has eaten the food
         if snake[0] == food:
-            score += 1
+            score += 1 #Increase the score
             food = None
             while food is None:
                 nf = [
                     random.randint(1, sh-1),
                     random.randint(1, sw-1)
                 ]
+                #If the new food is not a part of the snake, set it as the new food
                 food = nf if nf not in snake else None
             w.addch(food[0], food[1], curses.ACS_PI)
         else:
+            #Remove the tail of the snake
             tail = snake.pop()
             w.addch(int(tail[0]), int(tail[1]), ' ')
+        
+        #Check if the snake has hit itself or the wall
+        if snake[0][0] in [0, sh] or \
+            snake[0][1] in [0, sw] or \
+            snake[0] in snake[1:]:
+            
+
 
 
 
