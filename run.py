@@ -143,6 +143,8 @@ def main(stdscr):
             print(f'Conegratulations, {player}! Your score is {score}')
             break
             
+#initialize the game and start the main game loop
+curses.wrapper(main)
 
 
 
