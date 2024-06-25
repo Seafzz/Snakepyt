@@ -50,7 +50,6 @@ I tested it, and my friends tested the game.
 ## Validation:
 I used flake and black to validate my code to meet pep8 standard
 It passed with minor problems some of the issues I had was:
-- Import not used
 - blank lines contains whitespace
 - Line to long
 
