@@ -140,7 +140,7 @@ def main(stdscr):
             snake[0][1] in [0, sw] or \
             snake[0] in snake[1:]:
             curses.endwin()
-            print(f'Conegratulations, {player}! Your score is {score}')
+            print(f'Congratulations, {player}! Your score is {score}')
             break
             
 #initialize the game and start the main game loop
