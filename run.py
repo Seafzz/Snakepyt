@@ -94,13 +94,13 @@ def main(stdscr):
             w.addch(int(segement[0]), int(segement[1]), curses.ACS_CKBOARD)
 
          #User input for controlling the snake
-        next key = w.getch()
+        next_key = w.getch()
         if next_key in [curses.KEY_UP, curses.KEY_DOWN, curses.KEY_LEFT, curses.KEY_RIGHT]:
-        if (next_key == curses.KEY_UP and key != curses.KEY_DOWN) or \
-            (next_key == curses.KEY_DOWN and key != curses.KEY_UP) or \
-            (next_key == curses.KEY_LEFT and key != curses.KEY_RIGHT) or \
-            (next_key == curses.KEY_RIGHT and key != curses.KEY_LEFT):
-            key = next_key
+            if (next_key == curses.KEY_UP and key != curses.KEY_DOWN) or \
+                (next_key == curses.KEY_DOWN and key != curses.KEY_UP) or \
+                (next_key == curses.KEY_LEFT and key != curses.KEY_RIGHT) or \
+                (next_key == curses.KEY_RIGHT and key != curses.KEY_LEFT):
+                key = next_key
         
         #Calculate the new head of the snake
         new_head = [snake[0][0], snake[0][1]]
