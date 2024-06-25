@@ -74,4 +74,6 @@ def main(stdscr):
     #Create the food
     food = [sh//2, sw//2]
     w.addch(int(food[0]), int(food[1]), curses.ACS_PI)
-    
+
+    #Initialize the game state
+    key = curses.KEY_RIGHT
