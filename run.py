@@ -139,6 +139,9 @@ def main(stdscr):
         if snake[0][0] in [0, sh] or \
             snake[0][1] in [0, sw] or \
             snake[0] in snake[1:]:
+            curses.endwin()
+            print(f'Conegratulations, {player}! Your score is {score}')
+            break
             
 
 
