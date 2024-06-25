@@ -70,4 +70,8 @@ def main(stdscr):
         [snake_y, snake_x-1],
         [snake_y, snake_x-2]
     ]
+
+    #Create the food
+    food = [sh//2, sw//2]
+    w.addch(int(food[0]), int(food[1]), curses.ACS_PI)
     
