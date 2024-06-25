@@ -45,7 +45,7 @@ def print_instructions(stdscr, player):
 def main(stdscr):
     # Initialize curses mode
     try:
-    curses.curs_set(0) #Make cursor invisble
+        curses.curs_set(0) #Make cursor invisble
     except curses.error:
         pass #Handle the error if curs_set fails
     
