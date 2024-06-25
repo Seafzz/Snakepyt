@@ -86,4 +86,7 @@ def main(stdscr):
         w.clear()
         
         #display the snake and food in the game window
-        
+        w.addch(int(food[0]), int(food[1]), curses.ACS_PI)
+        for segement in snake:
+            w.addch(int(segement[0]), int(segement[1]), curses.ACS_CKBOARD)
+            
