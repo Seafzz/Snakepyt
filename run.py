@@ -81,4 +81,9 @@ def main(stdscr):
     #Initialize the score
     score = 0
 
-    
+    while True:
+        #clear the game window
+        w.clear()
+        
+        #display the snake and food in the game window
+        
