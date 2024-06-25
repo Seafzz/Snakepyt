@@ -33,13 +33,9 @@ def print_instructions(stdscr):
     """
     stdscr.clear()
     stdscr.addstr(0,0, "Instructions:")
-    stdscr.addstr(1,0, "1. The player has to guess the number between 1 and 100.")
-    stdscr.addstr(2,0, "2. The player has 10 attempts to guess the number.")
-    stdscr.addstr(3,0, "3. After each guess, the player will be told if the number is higher or lower.")
-    stdscr.addstr(4,0, "4. If the player guesses the number, the game will end.")
-    stdscr.addstr(5,0, "5. If the player runs out of attempts, the game will end.")
-    stdscr.addstr(6,0, "6. Good luck!")
-    stdscr.addstr(7,0, "Press any key to continue...")
+    stdscr.addstr(1,0, "1. The snake will grow in length as it eats the food.")
+    stdscr.addstr(2,0, "2. The game will end if the snake runs into the wall or itself.")
+    stdscr.addstr(3,0, "3. Use the arrow keys to move the snake.")
+    stdscr.addstr(4,0, "4. The snake will go faster if you hold down the key")
     stdscr.refresh()
     stdscr.getch()
-        
