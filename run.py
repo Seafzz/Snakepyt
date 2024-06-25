@@ -82,6 +82,9 @@ def main(stdscr):
     score = 0
 
     while True:
+        """
+        Main game loop for the snake game
+        """
         #clear the game window
         w.clear()
         
