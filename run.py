@@ -77,3 +77,8 @@ def main(stdscr):
 
     #Initialize the game state
     key = curses.KEY_RIGHT
+
+    #Initialize the score
+    score = 0
+
+    
