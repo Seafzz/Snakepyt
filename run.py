@@ -114,6 +114,10 @@ def main(stdscr):
             new_head[1] -= 1
         if key == curses.KEY_RIGHT:
             new_head[1] += 1
-            
+
+        #Insert the new head of the snake
+        snake.insert(0, new_head)
+        
+
 
                 
