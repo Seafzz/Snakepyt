@@ -117,7 +117,22 @@ def main(stdscr):
 
         #Insert the new head of the snake
         snake.insert(0, new_head)
-        
+
+        #Check if the snake has eaten the food
+        if snake[0] == food:
+            score += 1
+            food = None
+            while food is None:
+                nf = [
+                    random.randint(1, sh-1),
+                    random.randint(1, sw-1)
+                ]
+                food = nf if nf not in snake else None
+            w.addch(food[0], food[1], curses.ACS_PI)
+        else:
+            tail = snake.pop()
+            w.addch(int(tail[0]), int(tail[1]), ' ')
+
 
 
                 
