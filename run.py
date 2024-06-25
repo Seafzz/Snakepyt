@@ -105,4 +105,15 @@ def main(stdscr):
         #Calculate the new head of the snake
         new_head = [snake[0][0], snake[0][1]]
 
+        #Move the snake in the direction of the key
+        if key == curses.KEY_DOWN:
+            new_head[0] += 1
+        if key == curses.KEY_UP:
+            new_head[0] -= 1
+        if key == curses.KEY_LEFT:
+            new_head[1] -= 1
+        if key == curses.KEY_RIGHT:
+            new_head[1] += 1
+            
+
                 
