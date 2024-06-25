@@ -53,3 +53,7 @@ def main(stdscr):
     player = player_name(stdscr)
     if ask_played_before(stdscr) in {'no', 'n'}:
         print_instructions(stdscr)
+
+    #Clear the screen before starting the game loop
+    stdscr.clear()
+    
