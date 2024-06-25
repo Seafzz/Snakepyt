@@ -48,20 +48,19 @@ I tested it, and my friends tested the game.
     Fix: This was caused by an blank space being present in the movement function this is now removed and there hasnt been an issue after.
 
 ## Validation:
-I used pep8, flake and black to validate my code.
+I used flake and black to validate my code to meet pep8 standard
 It passed with minor problems some of the issues I had was:
 - Import not used
 - blank lines contains whitespace
 - Line to long
 
-All of this was fixed except 3, cause of how the code is written, I While trying to fix them I encountered more errors and left as following:
-- line to long (80 > 79) (line 80)
-- line to long (85 > 79) (ln 149)
-- "Missing module docstring" 
+     All errors was fixed except two, because of how it would´ve affected the readabillity of the code.
+
 
 ## Credits
 
 - Github co-pilot (Formating code to meet pep8 standard, code suggestions and to awnser code related questions)
 - Sean (classmate) Brainstorming, suggestions and pointers!
 - Python and curses library
-
+- Christian Thompson (https://gist.github.com/wynand1004)
+- Jaded Tuna https://github.com/JadedTuna 

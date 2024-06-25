@@ -81,7 +81,11 @@ def main(stdscr):
     # Create the snake
     snake_x = sw // 4
     snake_y = sh // 2
-    snake = [[snake_y, snake_x], [snake_y, snake_x - 1], [snake_y, snake_x - 2]]
+    snake = [
+        [snake_y, snake_x],
+        [snake_y, snake_x - 1],
+        [snake_y, snake_x - 2]
+    ]
 
     # Create the food
     food = [sh // 2, sw // 2]
@@ -150,7 +154,9 @@ def main(stdscr):
             w.addch(int(tail[0]), int(tail[1]), " ")
 
         # Check if the snake has hit itself or the wall
-        if snake[0][0] in [0, sh] or snake[0][1] in [0, sw] or snake[0] in snake[1:]:
+        if (snake[0][0] in [0, sh] or
+                snake[0][1] in [0, sw] or
+                snake[0] in snake[1:]):
             break
 
     # End curses window
