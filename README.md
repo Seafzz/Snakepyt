@@ -54,7 +54,7 @@ It passed with minor problems some of the issues I had was:
 - blank lines contains whitespace
 - Line to long
 
-     All errors was fixed except two, because of how it would´ve affected the readabillity of the code.
+     All errors was fixed.
 
 
 ## Credits
