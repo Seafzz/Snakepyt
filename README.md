@@ -59,10 +59,20 @@ It passed with minor problems some of the issues I had was:
 ### Technologies Used
 - Python library curses
 - Gitpod and github
+- Github co-pilot
 - Heroku
 - Black and Flake8 
 
 ### Deployment
+1. 
+2. Log into Heroku
+3. On Heroku click the menu and navigate to "New" and select "Create new app"
+4. Chose a name for your app, choose the region you are deploying from and then click "Create app"
+5. After you have clicked "Create app" Check "Deployment Method" and make sure you mark "Github"
+6. Once that is checked, go to "Search for repository to connect to: 
+- Choose the correct github account
+- Insert the name of the repository in this case: Snakepyt and click search.
+7. In deploy from Github make sure the branch is main, Then press Deploy Branch.
 
 
 
