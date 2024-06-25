@@ -52,7 +52,7 @@ def main(stdscr):
     #Get player information
     player = player_name(stdscr)
     if ask_played_before(stdscr) in {'no', 'n'}:
-        print_instructions(stdscr)
+        print_instructions(stdscr, player)
 
     #Clear the screen before starting the game loop
     stdscr.clear()
@@ -145,7 +145,3 @@ def main(stdscr):
             
 #initialize the game and start the main game loop
 curses.wrapper(main)
-
-
-
-                
