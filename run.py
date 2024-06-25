@@ -56,4 +56,8 @@ def main(stdscr):
 
     #Clear the screen before starting the game loop
     stdscr.clear()
-    
+
+    #Create the game window
+    w = curses.newwin(sh, sw, 0, 0)
+    w.keypad(1) #Enable keypad input
+    w.timeout(100) #Refresh the screen every 100ms
