@@ -54,6 +54,9 @@ Welcome to the Snake Game implemented in Python using the `curses` library. This
 | T10 | Game handles invalid input for the yes/no question | Enter an invalid input (e.g., "abc") when asked if you've played before | The game should ask the question again until a valid "yes" or "no" input is given | Game asked the question again until a valid input was given | Pass |
 
 
+## Screenshots
+
+
 ## Known Issues
  - Holding down the key would sometimes cause the snake to keep moving the same direction for a prolonged period of time and would not stop going that same direction until an unspecified amount of time had gone by.
     Fix: This was caused by an blank space being present in the movement function this is now removed and there hasnt been an issue after.
