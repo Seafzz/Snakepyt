@@ -14,12 +14,15 @@ def player_name(stdscr):
     while True:  # Loop until a valid name is provided
         stdscr.addstr(0, 0, "What's your name? (letters only): ")  # Prompt for name
         stdscr.refresh()
-        player = stdscr.getstr().decode(encoding="Utf-8").strip()  # Get the input and strip whitespace
+        player = stdscr.getstr().decode(encoding="utf-8").strip()  # Get the input and strip whitespace
         # Validate the name to ensure it consists of letters only
         if re.match("^[A-Za-z]+$", player):  # Check if the input is valid
             break  # Exit the loop if the name is valid
         else:
-            stdscr.addstr(1, 0, "Invalid name! Please enter letters only. Press any key to try again.")  # Error message
+            stdscr.addstr(
+                1, 0, 
+                "Invalid name! Please enter letters only. Press any key to try again."
+            )  # Error message
             stdscr.refresh()
             stdscr.getch()  # Wait for a key press
             stdscr.clear()  # Clear the screen for a new attempt
