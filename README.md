@@ -40,20 +40,17 @@ Welcome to the Snake Game implemented in Python using the `curses` library. This
 - After the game ends, press any key to exist the game.
 
 ### Manual testing
-I tested it, and my friends tested the game.
+
 
 
 ## Known Issues
  - Holding down the key would sometimes cause the snake to keep moving the same direction for a prolonged period of time and would not stop going that same direction until an unspecified amount of time had gone by.
     Fix: This was caused by an blank space being present in the movement function this is now removed and there hasnt been an issue after.
 
-## Validation:
-I used flake and black to validate my code to meet pep8 standard
-It passed with minor problems some of the issues I had was:
-- blank lines contains whitespace
-- Line to long
+## Code Validation:
+- The code has been validated using [pep8ci](https://pep8ci.herokuapp.com/).
+- Evidence of PEP 8 compliance: ![PEP 8 Validator Results](https://private-user-images.githubusercontent.com/163156309/376796603-27c1adb0-37f5-457d-a473-d1525acfea56.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjkwMjU4ODksIm5iZiI6MTcyOTAyNTU4OSwicGF0aCI6Ii8xNjMxNTYzMDkvMzc2Nzk2NjAzLTI3YzFhZGIwLTM3ZjUtNDU3ZC1hNDczLWQxNTI1YWNmZWE1Ni5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMDE1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTAxNVQyMDUzMDlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kOTEyNzZjZDY3Y2VlYTg1M2Q5Y2MxNzk3OTVlN2FmYmJlNDZmZTllMzFiMjEyMzM2YjQzN2FmZTQ5ODJkZjliJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.E6pgebHlJz2OB9aWqroYFSTxWg8T9-0eyoUKn1AeSeY)
 
-     All errors was fixed.
 
 ### Technologies Used
 - Python library curses
