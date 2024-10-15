@@ -50,7 +50,7 @@ Welcome to the Snake Game implemented in Python using the `curses` library. This
 | T06 | Score updates correctly after consumption | Eat multiple food items | Score should increase by 1 for each food item consumed | Score incremented correctly for each food item eaten | Pass |
 | T07 | Snake cannot move in the opposite direction | While moving right, press the **LEFT** key | Snake should not be able to move in the opposite direction (e.g., can't move left while moving right) | Snake does not turn in the opposite direction | Pass |
 | T08 | Game asks for player's name and previous play status | Start the game and enter a name. The game asks if the player has played before (yes/no) | The game asks for the player's name and whether they have played before with a yes/no input | Game asked for the name and previous play status | Pass          |
-
+| T09 | Game displays instructions if user hasn't played before | Answer "no" when asked if you have played before | Controls and instructions should be displayed on the screen | Instructions were shown on the screen | Pass |
 
 
 ## Known Issues
