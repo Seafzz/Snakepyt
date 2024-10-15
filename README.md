@@ -48,6 +48,7 @@ Welcome to the Snake Game implemented in Python using the `curses` library. This
 | T04 | Snake dies when colliding with itself | Make the snake collide with its own body | Game should end with a "Game Over" message when the snake collides with itself | Game Over message appears after snake collides with itself | Pass |
 | T05 | Random food spawn after consumption | Consume food and wait for the next food item to appear | A new food item should spawn randomly on the board without overlapping the snake's body | Food spawns at a random location, not overlapping the snake | Pass |
 | T06 | Score updates correctly after consumption | Eat multiple food items | Score should increase by 1 for each food item consumed | Score incremented correctly for each food item eaten | Pass |
+| T07 | Snake cannot move in the opposite direction | While moving right, press the **LEFT** key | Snake should not be able to move in the opposite direction (e.g., can't move left while moving right) | Snake does not turn in the opposite direction | Pass |
 
 
 ## Known Issues
