@@ -110,9 +110,10 @@ Displayed when the game ends, showing the player’s score.
 
 
 ## Credits
-
-- Github co-pilot (Formating code to meet pep8 standard, code suggestions and to awnser code related questions)
-- Sean (classmate) Brainstorming, suggestions and pointers!
-- Python and curses library
-- Christian Thompson (https://gist.github.com/wynand1004)
-- Jaded Tuna https://github.com/JadedTuna 
+- **Python**: For providing a powerful programming environment.
+- **Curses Library**: For enabling terminal handling in a user-friendly manner.
+- **GitHub Copilot**: For assistance in code formatting and suggestions.
+- **Special Thanks to**:
+  - Sean (classmate) for brainstorming and suggestions.
+  - Christian Thompson for code inspiration.
+  - Jaded Tuna for guidance on project structure.
