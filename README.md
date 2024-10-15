@@ -46,6 +46,8 @@ Welcome to the Snake Game implemented in Python using the `curses` library. This
 | T02 | Snake consumes food and grows | Move the snake to collide with the food | Snake grows in length by 1 and score increases by 1 |Snake grows and increments correctly| Pass |
 | T03 | Snake dies when colliding with the wall | Move the snake to the game boundary | Game should end with a "Game Over" message when the snake collides with the wall | Game over message appears after snake hits the wall | Pass |
 | T04 | Snake dies when colliding with itself | Make the snake collide with its own body | Game should end with a "Game Over" message when the snake collides with itself | Game Over message appears after snake collides with itself | Pass |
+| T05 | Random food spawn after consumption | Consume food and wait for the next food item to appear | A new food item should spawn randomly on the board without overlapping the snake's body | Food spawns at a random location, not overlapping the snake | Pass |
+| T06 | Score updates correctly after consumption | Eat multiple food items | Score should increase by 1 for each food item consumed | Score incremented correctly for each food item eaten | Pass |
 
 
 ## Known Issues
