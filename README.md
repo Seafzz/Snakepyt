@@ -81,8 +81,8 @@ Displayed when the game ends, showing the player’s score.
 
 
 ## Known Issues
- - Holding down the key would sometimes cause the snake to keep moving the same direction for a prolonged period of time and would not stop going that same direction until an unspecified amount of time had gone by.
-    Fix: This was caused by an blank space being present in the movement function this is now removed and there hasnt been an issue after.
+ - **Issue**: Holding down the arrow key may cause the snake to continue moving in the same direction for too long.
+- **Fix**: This was caused by a blank space in the movement function. This has been removed, and no further issues have been encountered. If the problem persists, try resetting the game by restarting the application.
 
 ## Code Validation:
 - The code has been validated using [pep8ci](https://pep8ci.herokuapp.com/).
