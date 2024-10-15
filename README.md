@@ -114,6 +114,6 @@ Displayed when the game ends, showing the player’s score.
 - **Curses Library**: For enabling terminal handling in a user-friendly manner.
 - **GitHub Copilot**: For assistance in code formatting and suggestions.
 - **Special Thanks to**:
-  - Sean (classmate) for brainstorming and suggestions.
-  - Christian Thompson for code inspiration.
-  - Jaded Tuna for guidance on project structure.
+  - Sean (classmate) Pointers, discussion and suggestions
+  - Christian Thompson for code inspiration. (https://gist.github.com/wynand1004)
+  - Jaded Tuna for guidance on project structure. https://github.com/JadedTuna 
