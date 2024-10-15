@@ -40,6 +40,8 @@ Welcome to the Snake Game implemented in Python using the `curses` library. This
 - After the game ends, press any key to exist the game.
 
 ### Manual testing
+| **Test ID** | **Functionality Tested**                        | **Input/Actions**                           | **Expected Outcome**                                                                                     | **Actual Outcome**                                       | **Pass/Fail** |
+|-------------|--------------------------------------------------|---------------------------------------------|----------------------------------------------------------------------------------------------------------|----------------------------------------------------------|---------------|
 
 
 
