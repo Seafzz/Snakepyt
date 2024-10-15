@@ -171,3 +171,4 @@ def main(stdscr):
 
 # Initialize the game and start the main game loop
 curses.wrapper(main)
+
