@@ -44,6 +44,8 @@ Welcome to the Snake Game implemented in Python using the `curses` library. This
 |-------------|--------------------------------------------------|---------------------------------------------|----------------------------------------------------------------------------------------------------------|----------------------------------------------------------|---------------|
 | T01 | Snake movement in all directions | Press **UP**, **DOWN**, **LEFT**, **RIGHT** keys | Snake should move in the respective direction with each key press | Snake moves as expected in all directions | Pass |
 | T02 | Snake consumes food and grows | Move the snake to collide with the food | Snake grows in length by 1 and score increases by 1 |Snake grows and increments correctly| Pass |
+| T03 | Snake dies when colliding with the wall | Move the snake to the game boundary | Game should end with a "Game Over" message when the snake collides with the wall | Game over message appears after snake hits the wall | Pass |
+| T04 | Snake dies when colliding with itself | Make the snake collide with its own body | Game should end with a "Game Over" message when the snake collides with itself | Game Over message appears after snake collides with itself | Pass |
 
 
 ## Known Issues
