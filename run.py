@@ -8,21 +8,27 @@ import re
 
 
 def player_name(stdscr):
-    """Function to get the player's name."""
+    """
+    Function to get the player's name. It ensures the input consists of
+    letters only and prompts again if the input is invalid.
+    """
     stdscr.clear()
     curses.echo()  # Enable text input
+
     while True:  # Loop until a valid name is provided
-        stdscr.addstr(0, 0, "What's your name? (letters only): ")  # Prompt for name
+        stdscr.addstr(0, 0, "What's your name? (letters only): ")
         stdscr.refresh()
-        player = stdscr.getstr().decode(encoding="utf-8").strip()  # Get the input and strip whitespace
+        # Get input and strip whitespace
+        player = stdscr.getstr().decode(encoding="utf-8").strip()
+
         # Validate the name to ensure it consists of letters only
-        if re.match("^[A-Za-z]+$", player):  # Check if the input is valid
+        if re.match("^[A-Za-z]+$", player):
             break  # Exit the loop if the name is valid
         else:
             stdscr.addstr(
-                1, 0, 
-                "Invalid name! Please enter letters only. Press any key to try again."
-            )  # Error message
+                1, 0,
+                "Invalid name! Letters only. Press any key to try again."
+            )
             stdscr.refresh()
             stdscr.getch()  # Wait for a key press
             stdscr.clear()  # Clear the screen for a new attempt
