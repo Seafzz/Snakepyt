@@ -42,7 +42,7 @@ Welcome to the Snake Game implemented in Python using the `curses` library. This
 ### Manual testing
 | **Test ID** | **Functionality Tested**                        | **Input/Actions**                           | **Expected Outcome**                                                                                     | **Actual Outcome**                                       | **Pass/Fail** |
 |-------------|--------------------------------------------------|---------------------------------------------|----------------------------------------------------------------------------------------------------------|----------------------------------------------------------|---------------|
-
+| T01 | Snake movement in all directions | Press **UP**, **DOWN**, **LEFT**, **RIGHT** keys | Snake should move in the respective direction with each key press | Snake moves as expected in all directions | Pass |
 
 
 ## Known Issues
